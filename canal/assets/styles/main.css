@@ -1,0 +1,432 @@
+p{
+    margin: 0%;
+    padding: 0%;
+}
+
+a{
+    margin: 0%;
+    padding: 0%;
+}
+
+h1{
+    margin: 0%;
+    padding: 0%;
+}
+
+h2{
+    margin: 0%;
+    padding: 0%;
+}
+
+main{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.contenedor_main{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedor_main_seccion_1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedor_main_seccion_2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 15px 15px;
+}
+
+.imagen_fondo{
+    width: 75%;
+    object-fit: cover;
+    animation: transicion_imagen 1s linear;
+}
+
+@keyframes transicion_imagen{
+    0%{
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50%{
+
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.texto_1{
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    animation: transicion_textos 1s linear;
+}
+
+.texto_2{
+    width: 90%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    animation: transicion_textos 1s linear;
+}
+
+.texto_3{
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    animation: transicion_textos 1s linear;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.texto_4{
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    animation: transicion_textos 1s linear;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.texto_5{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.barra_de_progreso{
+    border-radius: 10px;
+    width: 80%;
+    height: 15px;
+    background-color: #ffffff50;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: center;
+    overflow: hidden;
+}
+
+.progreso {
+    background: linear-gradient(
+        180deg, 
+       #7d5c27, #8f692c, #a67a30, 
+        #b28c32, #b28c32, #bd8c34, #c49f4c, #debe62, 
+        #d5b251, #ecce69, #e9e26b, #d5b45b, #b48332, 
+        #b28332, #98722e, #b28332, #a67a30, #98722e, 
+        #8b662b, #795927
+    );
+    background-size: 400% 400%;
+    animation: moverFondo 8s linear infinite;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+@keyframes moverFondo {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes transicion_textos{
+    0%{
+        opacity: 0;
+    }
+    50%{
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.contenedor_boton{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 0px 15px;
+}
+
+.contenedor_logo{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.texto-universal-section {
+    color: transparent;
+    background: linear-gradient(
+        180deg, 
+        #403017, #684c22, #7d5c27, #8f692c, #a67a30, 
+        #b28c32, #b28c32, #bd8c34, #c49f4c, #debe62, 
+        #d5b251, #ecce69, #e9e26b, #d5b45b, #b48332, 
+        #b28332, #98722e, #b28332, #a67a30, #98722e, 
+        #8b662b, #795927, #674c22, #503c1b
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.enlace{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    grid-gap: 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.enlace:link{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.enlace:focus{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.enlace:visited{
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contenedor_textos_fondo{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.imagen_logo{
+    height: 90%;
+}
+
+.boton_1{
+    border-radius: 15px;
+    background-color: #cf1c1c;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    transition: 0.25s;
+    animation: transicion_textos 1s linear;
+}
+
+.boton_1:hover{
+    background-color: #aa1717;
+}
+
+.boton_1:active{
+    transform: scale(0.9);
+    background-color: #8c1212;
+}
+
+@media screen and (min-width: 1101px) and (max-width: 1400px){
+    .texto_1{
+        font-size: 35px;
+    }
+    
+    .texto_2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1100px){
+    .texto_1{
+        font-size: 32px;
+    }
+    
+    .texto_2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px){
+    .texto_1{
+        font-size: 35px;
+    }
+    
+    .texto_2{
+        font-size: 25px;
+    }
+
+    .contenedor_main_seccion_1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        order: 2;
+        padding: 25px 0px;
+    }
+    
+    .contenedor_main_seccion_2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        grid-gap: 15px 15px;
+        order: 1;
+        padding: 25px 0px;
+    }
+
+    .imagen_fondo{
+        height: 400px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 600px){
+    .texto_1{
+        font-size: 28px;
+    }
+    
+    .texto_2{
+        font-size: 20px;
+    }
+
+    .contenedor_main_seccion_1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        order: 2;
+        padding: 25px 0px;
+    }
+    
+    .contenedor_main_seccion_2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        grid-gap: 15px 15px;
+        order: 1;
+        padding: 25px 0px;
+    }
+
+    .imagen_fondo{
+        height: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+    .texto_1{
+        font-size: 27px;
+    }
+    
+    .texto_2{
+        font-size: 19px;
+    }
+
+    .contenedor_main_seccion_1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        order: 2;
+        padding: 25px 0px;
+    }
+    
+    .contenedor_main_seccion_2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        grid-gap: 15px 15px;
+        order: 1;
+        padding: 25px 0px;
+    }
+
+    .imagen_fondo{
+        height: auto;
+        width: 80%;
+    }
+}
