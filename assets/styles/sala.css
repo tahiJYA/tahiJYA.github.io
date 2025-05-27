@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a, button{
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+.tarjeta-mapa{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagen-fondo{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+#rotate-message {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    z-index: 9999;
+    text-align: center;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+#rotate-message p {
+    margin-top: 40vh;
+}

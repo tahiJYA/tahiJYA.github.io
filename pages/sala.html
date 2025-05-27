@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala</title>
+
+    <link rel="stylesheet" href="../assets/styles/sala.css">
+</head>
+<body>
+    <div id="rotate-message">
+        <p>Por favor, gira tu dispositivo a modo horizontal para una mejor experiencia.</p>
+    </div>
+
+    <div class="tarjeta-mapa">
+        <img src="../assets/images/sala.png" alt="" class="imagen-fondo">
+    </div>
+
+    <script>
+        function checkOrientation() {
+      const message = document.getElementById('rotate-message');
+      if (window.innerHeight > window.innerWidth) {
+        // Modo vertical
+        message.style.display = 'block';
+      } else {
+        // Modo horizontal
+        message.style.display = 'none';
+      }
+    }
+
+    // Ejecutar al cargar
+    window.addEventListener('load', checkOrientation);
+
+    // Ejecutar al cambiar orientación
+    window.addEventListener('resize', checkOrientation);
+    window.addEventListener('orientationchange', checkOrientation);
+    </script>
+</body>
+</html>

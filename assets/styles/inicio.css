@@ -1,0 +1,104 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+a, button{
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+.contenedor-principal{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #5fa4ff, #5fdcff);
+    justify-content: center;
+    align-content: start;
+    position: relative;
+    z-index: 0;
+    grid-gap: 25px 25px;
+    padding: 25px 0px;
+}
+.contenedor-principal h1{
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 2;
+}
+.tarjeta-mapa{
+    width: 90%;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #00000050;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    transition: 0.25s;
+    z-index: 2;
+}
+.etiqueta-tarjeta-mapa{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-top-left-radius: 17.5px;
+    background: linear-gradient(to right, #a00eef, #f200ff);
+    width: auto;
+    height: auto;
+    padding: 5px 15px;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.etiqueta-tarjeta-mapa-dificultad{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+    padding: 5px 15px;
+    color: #52fd82;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px #000000;
+    text-transform: uppercase;
+}
+.floating-dot {
+    position: absolute;
+    bottom: -100px;
+    opacity: 0;
+    animation: floatUp 5s linear forwards;
+}
+.floating-dot {
+    background-color: white;
+    border-radius: 50%;
+    z-index: 0; /* detrás de las imágenes */
+}
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}

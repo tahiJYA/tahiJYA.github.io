@@ -1,0 +1,108 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+}
+a, button{
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+.contenedor-principal{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #5fa4ff, #5fdcff);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  z-index: 0;
+  grid-gap: 25px 10px;
+}
+
+.contenedor-principal h1{
+  font-size: 60px;
+  color: #ffffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  width: 100%;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  animation: h1-animation 4s ease-in-out infinite;
+  z-index: 2;
+}
+
+@keyframes h1-animation {
+  0%{
+    transform: scale(1.1);
+  }
+  50%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
+.floating-image,
+.floating-dot {
+    position: absolute;
+    bottom: -100px;
+    opacity: 0;
+    animation: floatUp 5s linear forwards;
+}
+
+.floating-image {
+    z-index: 1; /* por detrás del texto pero encima del fondo */
+}
+
+.floating-dot {
+    background-color: white;
+    border-radius: 50%;
+    z-index: 0; /* detrás de las imágenes */
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh);
+        opacity: 0;
+    }
+}
+.contenedor-universal{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 15px 0px;
+}
+.boton-1{
+  padding: 10px 15px;
+  background: linear-gradient(to right, #a00eef, #f200ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  transition: 0.25s;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 5px 5px 10px #00000050;
+  z-index: 2;
+}
+.boton-1:active{
+  transform: scale(0.9);
+}
